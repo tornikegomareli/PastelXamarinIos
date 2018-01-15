@@ -64,6 +64,8 @@ public override void ViewDidLoad()
         }
 }
 ```
+You need to include MPDCPastelXamarinIOS.Extensions namespace to use Colors and Point extension methods.
+
 In PastelGradient enum,  we have some custom gradient colors 
 - Warflame
 - NightFade
@@ -79,9 +81,10 @@ In PastelGradient enum,  we have some custom gradient colors
 You can use this custom colors, or feel free to add some more gradient colors.
 
 In SetColors method you can implement and add your own colors array.
-You can also add one UIColor in AddColor method.
 
-You need to include MPDCPastelXamarinIOS.Extensions namespace to use Colors and Point extension methods.
+![pastel_gradients_gif_01](https://user-images.githubusercontent.com/24585160/34964263-2477aa42-fa66-11e7-9ec0-e31afc059e5d.gif)
+
+
 
 For startpoint and endpoint you have 8 point choice.
 
