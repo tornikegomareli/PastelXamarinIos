@@ -4,6 +4,7 @@
 [![CI Status](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)](https://travis-ci.org/cruisediary/Pastel)
 [![Version](https://img.shields.io/badge/nuget-v.0.0.1-blue.svg)](##NugetPackage)
 ![Platform](https://img.shields.io/badge/Platform-Xamarin--iOS-orange.svg)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
 
 
