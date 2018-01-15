@@ -1,7 +1,12 @@
 🚀🚀
 
+<h5 align="center">
+  <br>
+  <a href=""><img src="https://user-images.githubusercontent.com/24585160/34963497-4a0818a4-fa62-11e7-9f52-9b02bc97da67.gif" alt="Markdownify" width="200"></a>
+</h5>
 
-# Pastel Xamarin-iOS version
+
+# Pastel library Xamarin-iOS version
 
 Pastel is swift library for gradient animation effects, we've inspired from this project.
 Xamarin-iOS didn't had anything like gradient animation library, so we rewrited C# version of it for Xamarin.
