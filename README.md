@@ -111,8 +111,8 @@ This software uses some code exmaples from open source Swift Pastel project.
 
 ## Authors
 
-* **Tornike Gomareli** - *Initial work* - [Tornike Gomareli](https://github.com/tornikegomareli)
-* **Giorgi Lekveishvili** - *Initial work* - [Giorgi Lekveishvili](https://github.com/lekve11)
+*  [Tornike Gomareli](https://github.com/tornikegomareli)
+*  [Giorgi Lekveishvili](https://github.com/lekve11)
 
 
 ## Licensing
