@@ -53,6 +53,7 @@
     <Compile Include="Interfaces\IPastelLableAble.cs" />
     <Compile Include="Classes\PastelPoint.cs" />
     <Compile Include="Classes\PastelView.cs" />
+    <Compile Include="Classes\PastelLabel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>

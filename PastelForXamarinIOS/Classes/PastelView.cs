@@ -11,14 +11,22 @@ namespace PastelForXamarinIOS.Classes
 {
     public class PastelView : UIView
     {
-        public NSCoder _keyPath;
-        public NSCoder _key;
+        //public NSCoder _keyPath;
+        //public NSCoder _key;
+
         public PastelView(CGRect frame) : base(frame)
         {
-            _keyPath = new NSCoder();
-            _key = new NSCoder();
-            _keyPath.SetNilValueForKey(new NSString("colors"));
-            _key.SetNilValueForKey(new NSString("ColorChange"));
+            //_keyPath = new NSCoder();
+            //_key = new NSCoder();
+            //_keyPath.Encode(new NSString("colors"));
+            //_key.Encode(new NSString("ColorChange"));
+
+
+        }
+
+        public PastelView(NSCoder aDecoder) : base(aDecoder)
+        {
+            
         }
 
         //static string keyPath = "colors";
@@ -30,19 +38,22 @@ namespace PastelForXamarinIOS.Classes
         public CGPoint _startPoint = PastelPoint.TopRight.Point();
         public CGPoint _endPoint = PastelPoint.BottomLeft.Point();
 
-        //public void StartPastelPoint(PastelPoint point)
-        //{
 
+        //public PastelPoint _startPastelPoint
+        //{
+        //    set
+        //    {
+        //        _startPoint = PastelPoint.TopRight.Point();
+        //    }
         //}
 
         //public PastelPoint _endPastelPoint
         //{
-        //    set
-        //    {
-        //        _endPoint = _endPastelPoint.Point();
-        //    }
+            //set
+            //{
+            //    _endPoint = PastelPoint.BottomLeft.Point();
+            //}
 
-        //};
 
         // Custom duration
 
@@ -50,16 +61,7 @@ namespace PastelForXamarinIOS.Classes
         private CAGradientLayer _gradient = new CAGradientLayer();
         private int _currentGradient = 0;
 
-        private List<UIColor> Colors = new List<UIColor>()
-        {
-            new UIColor(red:156/255,green:39/255,blue:176/255,alpha:1),
-            new UIColor(red:255/255,green:64/255,blue:129/255,alpha:1),
-            new UIColor(red:123/255,green:31/255,blue:162/255,alpha:1),
-            new UIColor(red:32/255,green:76/255,blue: 255/255,alpha:1),
-            new UIColor(red:32/255,green:158/255,blue: 255/255,alpha:1),
-            new UIColor(red:90/255,green: 120/255,blue:127/255,alpha:1),
-            new UIColor(red: 58/255,green:  255/255,blue: 217/255,alpha:1)
-        };
+        private List<UIColor> Colors;
 
         public override void AwakeFromNib()
         {
@@ -77,8 +79,7 @@ namespace PastelForXamarinIOS.Classes
         {
             _gradient.RemoveAllAnimations();
             setup();
-            //animateGradient();
-
+            AnimateGradient();
         }
 
         private void setup()
@@ -119,15 +120,24 @@ namespace PastelForXamarinIOS.Classes
 
         public void AnimateGradient()
         {
+            
             _currentGradient += 1;
-            var animation = new CABasicAnimation(_keyPath);
-            animation.Duration = 5.0;
-            // amimation.Tovalue
+            var animation = CABasicAnimation.FromKeyPath("colors");
+            animation.Duration = 2.0;
+
+            var nsArray =NSArray.FromObjects(CurrentGradientSet());
+            animation.To = nsArray;
+            //animation.From = NSArray.FromObjects(CurrentGradientSet());
+            animation.RemovedOnCompletion = false;
+
+            animation.AnimationStopped += (sender, e) => {
+                _gradient.Colors = CurrentGradientSet();
+                AnimateGradient();
+            };
+
             animation.FillMode = CAFillMode.Forwards;
-            // animation.isRemovedOnCompilation
-            //animation.Delegate = this;
-            // this properties isnt in C#
-            _gradient.AddAnimation(animation,_key.ToString());
+
+            _gradient.AddAnimation(animation,"ColorChange");
 
         }
 
@@ -143,4 +153,12 @@ namespace PastelForXamarinIOS.Classes
 
     }
 
+    //extension PastelView: CAAnimationDelegate {
+    //public func animationDidStop(_ anim: CAAnimation, finished flag: Bool)
+    //{
+    //    if flag {
+    //        gradient.colors = currentGradientSet()
+    //        animateGradient()
+    //    }
+    //}
 }
