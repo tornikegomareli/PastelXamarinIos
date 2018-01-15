@@ -1,13 +1,10 @@
 🚀🚀
-🚀🚀
-🚀🚀
-🚀🚀
+
 
 # Pastel Xamarin-iOS version
-> Additional information or tagline
 
-Pastel is swift library for gradient animation effects, we inspired from this project.
-Xamarin-iOS doesn't have anything like gradient animation library, so we rewrited C# version of it for Xamarin.
+Pastel is swift library for gradient animation effects, we've inspired from this project.
+Xamarin-iOS didn't had anything like gradient animation library, so we rewrited C# version of it for Xamarin.
 
 ## Installing / Getting started
 
@@ -55,16 +52,16 @@ public override void ViewDidLoad()
 }
 ```
 In PastelGradient enum,  we have some custom gradient colors 
- PastelGradient : * Warflame
-                  * NightFade
-                  * SpringWarmth
-                  * JuicyPeach
-                  * YoungPassion
-                  * LadyLips
-                  * SunnyMorning
-                  * RainyAshville
-                  * FrozenDreams
-                  * WinterNeva
+ PastelGradient : - Warflame
+                  - NightFade
+                  - SpringWarmth
+                  - JuicyPeach
+                  - YoungPassion
+                  - LadyLips
+                  - SunnyMorning
+                  - RainyAshville
+                  - FrozenDreams
+                  - WinterNeva
                  
 You can use this custom colors, or feel free to add some more gradient colors.
 
