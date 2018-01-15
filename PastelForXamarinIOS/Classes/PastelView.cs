@@ -7,7 +7,7 @@ using CoreAnimation;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MPDCPastelXamarinIOS.Classes
+namespace MPDCPastelXamarinIOS
 {
     public class PastelView : UIView
     {

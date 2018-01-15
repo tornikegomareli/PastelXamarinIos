@@ -4,7 +4,7 @@ using Foundation;
 using MPDCPastelXamarinIOS.Interfaces;
 using UIKit;
 
-namespace MPDCPastelXamarinIOS.Classes
+namespace MPDCPastelXamarinIOS
 {
     public class PastelLabel : PastelView,IPastelLableAble
     {
