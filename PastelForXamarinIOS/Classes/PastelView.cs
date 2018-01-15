@@ -17,7 +17,7 @@ namespace MPDCPastelXamarinIOS.Classes
 
         private const string KeyPath = "colors";
         private const string Key = "ColorChange";
-        private List<UIColor> Colors;
+        private List<UIColor> _colors;
         private CAGradientLayer _gradient = new CAGradientLayer();
         private int _currentGradient = 0;
 
@@ -64,14 +64,14 @@ namespace MPDCPastelXamarinIOS.Classes
         {
             return new CGColor[]
             {
-                Colors[_currentGradient % Colors.Count].CGColor,
-                Colors[(_currentGradient + 1) % Colors.Count].CGColor
+                _colors[_currentGradient % _colors.Count].CGColor,
+                _colors[(_currentGradient + 1) % _colors.Count].CGColor
             };
         }
 
         public void SetColors(UIColor[] colors)
         {
-            this.Colors = colors.ToList();
+            this._colors = colors.ToList();
         }
 
         public void SetPastelGradient(PastelGradient gradient)
@@ -81,7 +81,7 @@ namespace MPDCPastelXamarinIOS.Classes
 
         public void AddColor(UIColor color)
         {
-            this.Colors.Append(color);
+            this._colors.Append(color);
         }
 
         public void AnimateGradient()
