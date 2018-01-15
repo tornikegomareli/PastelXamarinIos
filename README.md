@@ -1,5 +1,13 @@
 🚀🚀
 
+![C#](https://img.shields.io/badge/C%23-7.0-red.svg)
+[![CI Status](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)](https://travis-ci.org/cruisediary/Pastel)
+[![Version](https://img.shields.io/badge/nuget-v.0.0.1-blue.svg)](##NugetPackage)
+
+
+
+
+
 ![pastel_01.gif](https://user-images.githubusercontent.com/24585160/34963497-4a0818a4-fa62-11e7-9f52-9b02bc97da67.gif)
 ![pastel_02.gif](https://user-images.githubusercontent.com/24585160/34963504-53c4a542-fa62-11e7-9128-ce18e3eea074.gif)
 ![pastel_03.gif](https://user-images.githubusercontent.com/24585160/34963506-53e1b3f8-fa62-11e7-9a73-fa112dfbca90.gif)
