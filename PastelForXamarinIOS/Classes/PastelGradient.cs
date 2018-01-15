@@ -1,10 +1,7 @@
 ﻿using System;
 namespace PastelForXamarinIOS.Classes
 {
-    public class PastelGradient
+    public enum PastelGradient
     {
-        public PastelGradient()
-        {
-        }
     }
 }
