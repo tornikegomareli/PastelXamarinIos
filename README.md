@@ -68,23 +68,35 @@ You can use this custom colors, or feel free to add some more gradient colors.
 In SetColors method you can implement and add your own colors array.
 You can also add one UIColor in AddColor method.
 
-You need to include MPDCPaletXamarinIOS.Extensions namespace to use Colors and Point extension methods.
+You need to include MPDCPastelXamarinIOS.Extensions namespace to use Colors and Point extension methods.
 
 For startpoint and endpoint you have 8 point choice.
 
-PastelPoint : * Left
-              * Top
-              * Right
-              * Bottom
-              * TopLeft
-              * TopRight
-              * BottomLeft
-              * BottomRight
+* Left
+* Top
+* Right
+* Bottom
+* TopLeft
+* TopRight
+* BottomLeft
+* BottomRight
 
 ## Contributing
 
 "If you'd like to contribute, please fork the repository and use a feature
 branch. Pull requests are warmly welcome."
+
+## Credits
+
+This software uses some code exmaples from open source Swift Pastel project.
+
+- [Swift Pastel](https://github.com/cruisediary/Pastel)
+
+
+## Authors
+
+* **Tornike Gomareli** - *Initial work* - [Tornike Gomareli](https://github.com/tornikegomareli)
+* **Giorgi Lekveishvili** - *Initial work* - [Giorgi Lekveishvili](https://github.com/lekve11)
 
 
 ## Licensing
