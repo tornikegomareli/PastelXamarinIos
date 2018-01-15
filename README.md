@@ -1,9 +1,9 @@
 🚀🚀
 
-![pastel_01.gif](https://user-images.githubusercontent.com/24585160/34963497-4a0818a4-fa62-11e7-9f52-9b02bc97da67.gif | width=100)
-![pastel_02.gif](https://user-images.githubusercontent.com/24585160/34963503-53a832d6-fa62-11e7-8579-c57d1b777726.gif | width=100)
-![pastel_03.gif](https://user-images.githubusercontent.com/24585160/34963504-53c4a542-fa62-11e7-9128-ce18e3eea074.gif | width=100)
-![pastel_04.gif](https://user-images.githubusercontent.com/24585160/34963506-53e1b3f8-fa62-11e7-9a73-fa112dfbca90.gif | width=100)
+![](https://user-images.githubusercontent.com/24585160/34963497-4a0818a4-fa62-11e7-9f52-9b02bc97da67.gif | width=100)
+![](https://user-images.githubusercontent.com/24585160/34963503-53a832d6-fa62-11e7-8579-c57d1b777726.gif | width=100)
+![](https://user-images.githubusercontent.com/24585160/34963504-53c4a542-fa62-11e7-9128-ce18e3eea074.gif | width=100)
+![](https://user-images.githubusercontent.com/24585160/34963506-53e1b3f8-fa62-11e7-9a73-fa112dfbca90.gif | width=100)
 
 
 # Pastel library Xamarin-iOS version
