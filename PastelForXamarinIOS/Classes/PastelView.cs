@@ -11,58 +11,23 @@ namespace PastelForXamarinIOS.Classes
 {
     public class PastelView : UIView
     {
-        //public NSCoder _keyPath;
-        //public NSCoder _key;
 
-        public PastelView(CGRect frame) : base(frame)
-        {
-            //_keyPath = new NSCoder();
-            //_key = new NSCoder();
-            //_keyPath.Encode(new NSString("colors"));
-            //_key.Encode(new NSString("ColorChange"));
+        public PastelView(CGRect frame) : base(frame){}
+        public PastelView(NSCoder aDecoder) : base(aDecoder){}
 
-
-        }
-
-        public PastelView(NSCoder aDecoder) : base(aDecoder)
-        {
-            
-        }
-
-        //static string keyPath = "colors";
-        //static string key = "ColorChange";
-
-
-
+        private const string KeyPath = "colors";
+        private const string Key = "ColorChange";
+        private List<UIColor> Colors;
+        private CAGradientLayer _gradient = new CAGradientLayer();
+        private int _currentGradient = 0;
 
         public CGPoint _startPoint = PastelPoint.TopRight.Point();
         public CGPoint _endPoint = PastelPoint.BottomLeft.Point();
 
 
-        //public PastelPoint _startPastelPoint
-        //{
-        //    set
-        //    {
-        //        _startPoint = PastelPoint.TopRight.Point();
-        //    }
-        //}
-
-        //public PastelPoint _endPastelPoint
-        //{
-            //set
-            //{
-            //    _endPoint = PastelPoint.BottomLeft.Point();
-            //}
-
-
         // Custom duration
-
-        public TimeSpan _interval = TimeSpan.FromMilliseconds(5.0);
-        private CAGradientLayer _gradient = new CAGradientLayer();
-        private int _currentGradient = 0;
-
-        private List<UIColor> Colors;
-
+        public double AnimationDuration { get; set; }
+       
         public override void AwakeFromNib()
         {
             base.AwakeFromNib();
@@ -75,13 +40,6 @@ namespace PastelForXamarinIOS.Classes
             _gradient.Frame = Bounds;
         }
 
-        public void StartAnimation()
-        {
-            _gradient.RemoveAllAnimations();
-            setup();
-            AnimateGradient();
-        }
-
         private void setup()
         {
             _gradient.Frame = Bounds;
@@ -90,12 +48,20 @@ namespace PastelForXamarinIOS.Classes
             _gradient.EndPoint = _endPoint;
             _gradient.DrawsAsynchronously = true;
 
-            Layer.InsertSublayer(_gradient,0);
+            Layer.InsertSublayer(_gradient, 0);
         }
+
+        public void StartAnimation()
+        {
+            _gradient.RemoveAllAnimations();
+            setup();
+            AnimateGradient();
+        }
+
+      
 
         public CGColor[] CurrentGradientSet()
         {
-            //guard colors.count > 0 else { return [] }
             return new CGColor[]
             {
                 Colors[_currentGradient % Colors.Count].CGColor,
@@ -122,12 +88,11 @@ namespace PastelForXamarinIOS.Classes
         {
             
             _currentGradient += 1;
-            var animation = CABasicAnimation.FromKeyPath("colors");
-            animation.Duration = 2.0;
+            var animation = CABasicAnimation.FromKeyPath(KeyPath);
+            animation.Duration = AnimationDuration;
 
-            var nsArray =NSArray.FromObjects(CurrentGradientSet());
+            var nsArray = NSArray.FromObjects(CurrentGradientSet());
             animation.To = nsArray;
-            //animation.From = NSArray.FromObjects(CurrentGradientSet());
             animation.RemovedOnCompletion = false;
 
             animation.AnimationStopped += (sender, e) => {
@@ -137,7 +102,7 @@ namespace PastelForXamarinIOS.Classes
 
             animation.FillMode = CAFillMode.Forwards;
 
-            _gradient.AddAnimation(animation,"ColorChange");
+            _gradient.AddAnimation(animation,Key);
 
         }
 
@@ -149,16 +114,5 @@ namespace PastelForXamarinIOS.Classes
             _gradient.RemoveFromSuperLayer();
         }
 
-        //todo
-
     }
-
-    //extension PastelView: CAAnimationDelegate {
-    //public func animationDidStop(_ anim: CAAnimation, finished flag: Bool)
-    //{
-    //    if flag {
-    //        gradient.colors = currentGradientSet()
-    //        animateGradient()
-    //    }
-    //}
 }
