@@ -52,16 +52,16 @@ public override void ViewDidLoad()
 }
 ```
 In PastelGradient enum,  we have some custom gradient colors 
- PastelGradient : - Warflame
-                  - NightFade
-                  - SpringWarmth
-                  - JuicyPeach
-                  - YoungPassion
-                  - LadyLips
-                  - SunnyMorning
-                  - RainyAshville
-                  - FrozenDreams
-                  - WinterNeva
+- Warflame
+- NightFade
+- SpringWarmth
+- JuicyPeach
+- YoungPassion
+- LadyLips
+- SunnyMorning
+- RainyAshville
+- FrozenDreams
+- WinterNeva
                  
 You can use this custom colors, or feel free to add some more gradient colors.
 
