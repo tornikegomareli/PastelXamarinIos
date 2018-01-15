@@ -38,14 +38,17 @@ namespace TestProject
             // Initializing pastelView object
             var pastelView = new PastelForXamarinIOS.Classes.PastelView(View.Bounds);
 
+            pastelView.AnimationDuration = 2.0;
+
             // init start poind and end point
             pastelView._startPoint = PastelPoint.BottomLeft.Point();
             pastelView._endPoint = PastelPoint.TopRight.Point();
 
 
             // seting two colors
-            pastelView.SetColors(new UIColor[]{FirstGradientColor
-                ,SecondGradientColor});
+            pastelView.SetColors(new UIColor[]{
+                FirstGradientColor,SecondGradientColor
+            });
 
             pastelView.StartAnimation();
             View.InsertSubview(pastelView,0);
