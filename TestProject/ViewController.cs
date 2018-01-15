@@ -1,6 +1,6 @@
 ﻿using System;
-using PastelForXamarinIOS.Classes;
-using PastelForXamarinIOS.Extensions;
+using MPDCPastelXamarinIOS.Classes;
+using MPDCPastelXamarinIOS.Extensions;
 using UIKit;
 
 namespace TestProject
@@ -36,7 +36,7 @@ namespace TestProject
             base.ViewDidLoad();
 
             // Initializing pastelView object
-            var pastelView = new PastelForXamarinIOS.Classes.PastelView(View.Bounds);
+            var pastelView = new MPDCPastelXamarinIOS.Classes.PastelView(View.Bounds);
 
             pastelView.AnimationDuration = 2.0;
 

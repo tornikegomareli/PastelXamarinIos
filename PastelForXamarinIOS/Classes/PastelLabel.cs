@@ -1,10 +1,10 @@
 ﻿using System;
 using CoreGraphics;
 using Foundation;
-using PastelForXamarinIOS.Interfaces;
+using MPDCPastelXamarinIOS.Interfaces;
 using UIKit;
 
-namespace PastelForXamarinIOS.Classes
+namespace MPDCPastelXamarinIOS.Classes
 {
     public class PastelLabel : PastelView,IPastelLableAble
     {

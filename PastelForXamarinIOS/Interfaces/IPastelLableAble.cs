@@ -2,7 +2,7 @@
 using Foundation;
 using UIKit;
 
-namespace PastelForXamarinIOS.Interfaces
+namespace MPDCPastelXamarinIOS.Interfaces
 {
     public interface IPastelLableAble
     {

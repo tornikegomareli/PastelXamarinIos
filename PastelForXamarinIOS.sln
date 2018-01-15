@@ -1,7 +1,7 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PastelForXamarinIOS", "PastelForXamarinIOS\PastelForXamarinIOS.csproj", "{3F444A3A-6FA7-4E05-B490-FE35B50404C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPDCPastelXamarinIOS", "PastelForXamarinIOS\MPDCPastelXamarinIOS.csproj", "{3F444A3A-6FA7-4E05-B490-FE35B50404C4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{225082C1-A65B-4367-B6A7-030BE3E2D2DC}"
 EndProject

@@ -1,5 +1,5 @@
 ﻿using System;
-namespace PastelForXamarinIOS.Classes
+namespace MPDCPastelXamarinIOS.Classes
 {
     public enum PastelGradient
     {

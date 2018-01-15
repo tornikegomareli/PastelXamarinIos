@@ -109,9 +109,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\PastelForXamarinIOS\PastelForXamarinIOS.csproj">
+    <ProjectReference Include="..\PastelForXamarinIOS\MPDCPastelXamarinIOS.csproj">
       <Project>{3F444A3A-6FA7-4E05-B490-FE35B50404C4}</Project>
-      <Name>PastelForXamarinIOS</Name>
+      <Name>MPDCPastelXamarinIOS</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

@@ -1,13 +1,13 @@
 ﻿using System;
 using CoreGraphics;
 using Foundation;
-using PastelForXamarinIOS.Extensions;
+using MPDCPastelXamarinIOS.Extensions;
 using UIKit;
 using CoreAnimation;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace PastelForXamarinIOS.Classes
+namespace MPDCPastelXamarinIOS.Classes
 {
     public class PastelView : UIView
     {

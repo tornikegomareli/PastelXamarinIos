@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using CoreGraphics;
-using PastelForXamarinIOS.Classes;
+using MPDCPastelXamarinIOS.Classes;
 using UIKit;
-namespace PastelForXamarinIOS.Extensions
+namespace MPDCPastelXamarinIOS.Extensions
 {
     public static class Extensions
     {
