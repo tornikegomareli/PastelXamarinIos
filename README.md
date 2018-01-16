@@ -51,9 +51,9 @@ public override void ViewDidLoad()
             pastelView.AnimationDuration = 2.0;
 
             // init start point and end point
-            pastelView._startPoint = PastelPoint.BottomLeft.Point();
-            pastelView._endPoint = PastelPoint.TopRight.Point();
-
+            
+            pastelView.StartPoint = PastelPoint.BottomLeft.Point();
+            pastelView.EndPoint = PastelPoint.TopRight.Point();
 
             // seting  colors
             pastelView.SetColors(PastelGradient.WinterNeva.Colors());
