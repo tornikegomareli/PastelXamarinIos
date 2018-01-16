@@ -20,10 +20,28 @@ namespace MPDCPastelXamarinIOS
         private List<UIColor> _colors;
         private CAGradientLayer _gradient = new CAGradientLayer();
         private int _currentGradient = 0;
+        private CGPoint _startPoint;
+        private CGPoint _endPoint;
 
-        public CGPoint _startPoint = PastelPoint.TopRight.Point();
-        public CGPoint _endPoint = PastelPoint.BottomLeft.Point();
+        public CGPoint StartPoint
+        {
+            get{
+                return _startPoint;
+            }
+            set{
+                _startPoint = value;
+            }
+        }
 
+        public CGPoint EndPoint
+        {
+            get{
+                return _endPoint;
+            }
+            set{
+                _endPoint = value;
+            }
+        }
 
         // Custom duration
         public double AnimationDuration { get; set; }
