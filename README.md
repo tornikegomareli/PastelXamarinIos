@@ -105,7 +105,7 @@ branch. Pull requests are warmly welcome."
 
 ## Credits
 
-This software uses some code exmaples from open source Swift Pastel project.
+This software uses some code examples from open source Swift Pastel project.
 
 - [Swift Pastel](https://github.com/cruisediary/Pastel)
 
