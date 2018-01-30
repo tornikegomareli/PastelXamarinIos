@@ -9,6 +9,9 @@ using System.Linq;
 
 namespace MPDCPastelXamarinIOS
 {
+    /// <summary>
+    /// PastelView To be added
+    /// </summary>
     public class PastelView : UIView
     {
 

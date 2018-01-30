@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MPDC.Xamarin.iOS.Pastel</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>Tornike Gomareli</authors>
+    <owners>MPDC</owners>
+    <licenseUrl>https://github.com/tornikegomareli/PastelXamarinIos</licenseUrl>
+    <projectUrl>https://github.com/tornikegomareli/PastelXamarinIos</projectUrl>
+    <iconUrl>https://assets-cdn.github.com/images/icons/emoji/unicode/1f312.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Pastel library Xamarin-iOS version</description>
+    <releaseNotes>Initial Release</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Xamarin iOS Pastel Gradient Animation</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Release\PastelForXamarinIOS.dll" target="lib\Xamarin.iOS1.0" />
+    <file src="bin\Release\Pastel.xml" target="lib\Xamarin.iOS1.0" />
+  </files>
+</package>
