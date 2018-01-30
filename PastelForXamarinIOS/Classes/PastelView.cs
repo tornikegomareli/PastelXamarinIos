@@ -26,6 +26,9 @@ namespace MPDCPastelXamarinIOS
         private CGPoint _startPoint;
         private CGPoint _endPoint;
 
+        /// <summary>
+        /// The start point for animation
+        /// </summary>
         public CGPoint StartPoint
         {
             get{
@@ -46,7 +49,9 @@ namespace MPDCPastelXamarinIOS
             }
         }
 
-        // Custom duration
+        /// <summary>
+        /// Set aniamtion custom duration in miliseconds
+        /// </summary>
         public double AnimationDuration { get; set; }
        
         public override void AwakeFromNib()
@@ -72,6 +77,9 @@ namespace MPDCPastelXamarinIOS
             Layer.InsertSublayer(_gradient, 0);
         }
 
+        /// <summary>
+        /// Stops existing animations if any and starts animation
+        /// </summary>
         public void StartAnimation()
         {
             _gradient.RemoveAllAnimations();
@@ -80,7 +88,9 @@ namespace MPDCPastelXamarinIOS
         }
 
       
-
+        /// <summary>
+        /// Get Current Gradient Colors
+        /// </summary>
         public CGColor[] CurrentGradientSet()
         {
             return new CGColor[]
@@ -90,20 +100,33 @@ namespace MPDCPastelXamarinIOS
             };
         }
 
+        /// <summary>
+        /// Set custom colors for gradient
+        /// </summary>
         public void SetColors(UIColor[] colors)
         {
             this._colors = colors.ToList();
         }
 
+
+        /// <summary>
+        /// Set predefined colors
+        /// </summary>
+        /// <param name="gradient">MPDCPastelXamarinIOS.PastelGradient enumeration</param>
         public void SetPastelGradient(PastelGradient gradient)
         {
             SetColors(gradient.Colors());
         }
 
+        /// <summary>
+        /// Add a color to the existing list of colors
+        /// </summary>
+        /// <param name="color">Color to be added</param>
         public void AddColor(UIColor color)
         {
             this._colors.Append(color);
         }
+
 
         public void AnimateGradient()
         {
