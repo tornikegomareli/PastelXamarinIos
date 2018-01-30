@@ -20,13 +20,12 @@
 Pastel is swift library for gradient animation effects, we've inspired from this project.
 Xamarin-iOS didn't had anything like gradient animation library, so we rewrited C# version of it for Xamarin.
 
-https://www.nuget.org/packages/MPDC.Xamarin.iOS.Pastel
+
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get pastel in your project
-
-Check out PastelXamarinIos on Nuget https://www.nuget.org/packages/MPDC.Xamarin.iOS.Pastel
+You can install library from the NuGet Packages.
+https://www.nuget.org/packages/MPDC.Xamarin.iOS.Pastel
 
 
 ## Developing
