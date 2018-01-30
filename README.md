@@ -29,7 +29,7 @@ https://www.nuget.org/packages/MPDC.Xamarin.iOS.Pastel
 
 From the console you can
 ```
-PM> Install-Package MPDC.Xamarin.iOS.Pastel -Version 1.0.6604.22769	
+PM> Install-Package MPDC.Xamarin.iOS.Pastel	
 
 ```
 
