@@ -27,6 +27,13 @@ Xamarin-iOS didn't had anything like gradient animation library, so we rewrited 
 You can install library from the NuGet Packages.
 https://www.nuget.org/packages/MPDC.Xamarin.iOS.Pastel
 
+From the console you can
+```
+PM> Install-Package MPDC.Xamarin.iOS.Pastel -Version 1.0.6604.22769	
+
+```
+
+
 
 ## Developing
 
